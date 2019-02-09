@@ -43,7 +43,8 @@
 
 		for (let i = 0; i < li.length; i++) {
 			li[i].onclick = function () {
-				player[i].play()
+				player[i].currentTime = 0;
+				player[i].play();
 			}
 		}
 
